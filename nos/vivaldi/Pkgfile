@@ -2,19 +2,19 @@
 
 description="An advanced browser made with the power user in mind."
 url="https://vivaldi.com"
-packager="greg<greg@nutyx.org>"
+packager="tnut <tnut@nutyx.org>"
+contributors="Greg"
 
 name=vivaldi
 _name=vivaldi-ffmpeg-codecs
-version=1.13.1008.44
-_version=62.0.3202.97-1
+version=1.15
+_version=1147.52-1
 release=1
 
 run=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
-#https://repo.herecura.eu/herecura/x86_64/$_name-$_version-x86_64.pkg.tar.xz
 
-source=(https://downloads.vivaldi.com/stable/$name-stable-$version-1.x86_64.rpm
+source=(https://downloads.vivaldi.com/stable/$name-stable-$version.${_version}.x86_64.rpm
 libffmpeg.so)
 
 build() {
