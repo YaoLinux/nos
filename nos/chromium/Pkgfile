@@ -1,10 +1,12 @@
-# Depends on: gtk3 ffmpeg flac dbus freetype2 xorg-libxss xorg-libxslt nss snappy re2
+# Depends on: gtk3 ffmpeg flac dbus freetype2 xorg-libxss xorg-libxslt nss snappy re2 json-glib
 
 description="A web browser built for speed, simplicity, and security"
 url="https://www.chromium.org/Home"
 
 name=chromium
 version=67.0.3396.99
+release=2
+
 packager="tnut <tnut@nutyx.org>"
 maintainer="Arch Linux"
 
