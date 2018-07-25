@@ -4,8 +4,7 @@ description="A web browser built for speed, simplicity, and security"
 url="https://www.chromium.org/Home"
 
 name=chromium
-version=67.0.3396.99
-release=2
+version=68.0.3440.75
 
 packager="tnut <tnut@nutyx.org>"
 maintainer="Arch Linux"
