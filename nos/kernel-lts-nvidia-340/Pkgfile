@@ -7,7 +7,7 @@ contributors=""
 packager="remy <remy@nutyx.org>"
 
 name=kernel-lts-nvidia-340
-version=340.106
+version=340.107
 modfolder=/lib/modules/`uname -r`/kernel/drivers/video
 
 source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
@@ -37,6 +37,6 @@ install -D -m644 "$SRC/NVIDIA-Linux-x86_64-$version/kernel/uvm/nvidia-uvm.ko" \
       "$PKG$modfolder/nvidia-uvm.ko"
 gzip $PKG$modfolder/*.ko
 
-}
 echo "depmod -a `basename /lib/modules/*`" > kernel-lts-nvidia-340.post-install
 
+}
