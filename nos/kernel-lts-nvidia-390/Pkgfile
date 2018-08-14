@@ -2,12 +2,12 @@
 description="Additionnals modules for Nvidia proprietary drivers"
 url="http://www.nvidia.com/"
 
-maintainer=""
-contributors=""
-packager="remy <remy@nutyx.org>"
+contributors="Remy"
+packager="tnut <tnut@nutyx.org>"
 
 name=kernel-lts-nvidia-390
-version=390.48
+version=390.77
+
 modfolder=/lib/modules/`uname -r`/kernel/drivers/video
 
 source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
@@ -34,6 +34,7 @@ install -D -m644 "$SRC/NVIDIA-Linux-x86_64-$version/kernel/nvidia-uvm.ko" \
       "$PKG$modfolder/nvidia-uvm.ko"
 gzip $PKG$modfolder/*.ko
 
-}
-echo "depmod -a `basename /lib/modules/*`" > kernel-lts-nvidia-390.post-install
+echo "depmod -a `basename /lib/modules/*`" > \
+$PKGMK_ROOT/$name.post-install
 
+}
