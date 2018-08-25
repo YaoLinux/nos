@@ -3,12 +3,12 @@ description="Additionnals modules for Nvidia proprietary drivers"
 url="http://www.nvidia.com/"
 
 maintainer=""
-contributors=""
-packager="remy <remy@nutyx.org>"
+packager="tnut <tnut@nutyx.org"
+contributors="Remy, Greg"
 
 name=kernel-lts-nvidia-340
 version=340.107
-release=2
+release=3
 
 modfolder=/lib/modules/`uname -r`/kernel/drivers/video
 
@@ -22,7 +22,8 @@ sh NVIDIA-Linux-x86_64-$version.run --extract-only
 build()
 {
 cd NVIDIA-Linux-x86_64-$version
-    patch -Np0 < "$SRC/kernel-4.11.patch"
+patch -Np0 < "$SRC/kernel-4.11.patch"
+export IGNORE_CC_MISMATCH=1
 cd kernel
 make module
 
