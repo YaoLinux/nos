@@ -58,8 +58,10 @@ build() {
 	for i in 0 1 2 6
 	do
 		mkdir -p $PKG/etc/rc.d/rc$i.d
-		ln -sv ../init/vbox-add-service $PKG/etc/rc.d/rc$i.d/K65vboxadd-service
+		ln -sv ../init.d/vboxadd-service $PKG/etc/rc.d/rc$i.d/K65vboxadd-service
 	done
+	sed -i 's@killall $1@killall -w $1@'  $PKG/etc/rc.d/init.d/vboxadd-service
+
 	cat > $PKG/etc/sysconfig/modules.d/virtualbox-guest.conf << "EOF"
 vboxguest
 vboxsf
