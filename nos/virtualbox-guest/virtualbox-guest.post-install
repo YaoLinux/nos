@@ -1,0 +1,5 @@
+. lib/lsb/init-functions
+
+getent group vboxsf > /dev/null || groupadd -r -f vboxsf
+
+log_warning_msg "${WARNING}All users which want to access the auto-mounted Shared Folders have to add to the 'vboxsf' group ${NORMAL}"
