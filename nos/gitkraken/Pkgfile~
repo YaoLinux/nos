@@ -8,7 +8,7 @@ name=gitkraken
 version=4.0.6
 release=1
 
-source=(https://release.axocdn.com/linux/GitKraken-18.04-v$version.tar.gz
+source=(https://release.gitkraken.com/linux/v$version.tar.gz
 		GitKraken.desktop
 		gitkraken.png
 		eula.html
