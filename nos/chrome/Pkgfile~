@@ -1,0 +1,25 @@
+# Depends on: alsa-lib gconf gtk3 cups xorg-libx11 xorg-libxtst nss xdg-utils ttf-liberation
+
+description="An attempt at creating a safer, faster, and more stable browser (Stable Channel)"
+url="https://dl.google.com/"
+packager="rems <rems@nutyx.org>"
+contributors="Greg, tnut"
+
+name=chrome
+version=70.0.3538.102
+
+PKGMK_KEEP_SOURCES='NO'
+
+source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+
+build() {
+
+   cd $SRC
+   ar x google-chrome-stable_current_amd64.deb
+   tar xf data.tar.xz -C "$PKG"
+   
+
+mkdir -pv $PKG/usr/share/pixmaps
+ln -sf /opt/google/chrome/product_logo_256.png  $PKG/usr/share/pixmaps/google-chrome.png
+
+}
