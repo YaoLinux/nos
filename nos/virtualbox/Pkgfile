@@ -6,9 +6,9 @@ packager="tnut <tnut@nutyx.org>"
 contributors="tnut, greg"
 
 name=virtualbox
-version=5.2.20
+version=5.2.22
 _name=Oracle_VM_VirtualBox_Extension_Pack
-_release=125813
+_release=126460
 
 
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
