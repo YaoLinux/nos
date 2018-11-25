@@ -5,7 +5,8 @@ packager="liberodark"
 url="https://www.teamviewer.com/"
 
 name=teamviewer-14
-version=14.0.8346
+version=14.0.14470
+run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
 PKGMK_GROUPS=()
 
