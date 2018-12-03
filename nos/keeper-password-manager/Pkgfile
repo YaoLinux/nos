@@ -1,0 +1,20 @@
+# Depends on: xdg-utils
+ 
+description="Keeper is for protecting and managing your passwords."
+packager="liberodark"
+url="https://keepersecurity.com"
+
+name=keeper-password-manager
+version=14.0.5
+
+source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_${version}_amd64.deb
+        keeper-password-manager.desktop
+        keeper-password-manager.png)
+
+build() {
+tar xvf data.tar.xz
+cp -r usr $PKG
+install -vDm644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+install -vDm644 $SRC/$name.png $PKG/usr/share/pixmaps/$name.png
+rm -v "$PKG/usr/lib/keeperpasswordmanager/resources/app.asar.unpacked/libu2f-host-1.1.4-x86_64-gnu/lib/libu2f-host.la"
+}
