@@ -8,8 +8,8 @@ name=keeper-password-manager
 version=14.0.5
 
 source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_${version}_amd64.deb
-        keeper-password-manager.desktop
-        keeper-password-manager.png)
+        http://rems.techozor.fr/sources/keeper-password-manager.png
+        keeper-password-manager.desktop)
 
 build() {
 tar xvf data.tar.xz
