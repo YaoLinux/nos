@@ -5,8 +5,8 @@ url="http://virtualbox.org"
 packager="tnut <tnut@nutyx.org>"
 
 name=virtualbox-guest
-version=5.2.22
-_release=126460
+version=6.0.0
+_release=127566
 
 PKGMK_GROUPS=(man)
 
