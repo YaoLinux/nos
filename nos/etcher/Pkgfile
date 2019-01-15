@@ -1,17 +1,17 @@
- # Depends on: 
+# Depends on: 
 
 description="Flash OS images to SD cards & USB drives, safely and easily."
-packager="liberodark"
+packager="rems@nutyx.org"
+contributors="liberodark"
 url="https://etcher.io/"
 
 name=etcher
-version=1.4.6
+version=1.4.9
 
-source=(https://github.com/balena-io/etcher/releases/download/v${version}/etcher-electron_${version}_amd64.deb)
+source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb)
 
 build() {
 
-ar x etcher-electron_${version}_amd64.deb
 tar xvf data.tar.xz
 cp -r opt $PKG
 cp -r usr $PKG
