@@ -1,14 +1,13 @@
+# Depends on: gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 rtmpdump
+
 description="The intuitive, fast, and beautiful cross-platform Git client."
 url="https://www.gitkraken.com/"
 packager="greg<greg@nutyx.org>"
 
-# Depends on: gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 openssl10 rtmpdump
-
 name=gitkraken
-version=4.0.6
-release=1
+version=4.2.0
 
-source=(https://release.axocdn.com/linux/GitKraken-18.04-v$version.tar.gz
+source=(https://release.axocdn.com/linux/GitKraken-v$version.tar.gz
 		GitKraken.desktop
 		gitkraken.png
 		eula.html
@@ -18,7 +17,7 @@ source=(https://release.axocdn.com/linux/GitKraken-18.04-v$version.tar.gz
 build() {
 
   install -d $PKG/opt
-    cp -R $SRC/gitkraken $PKG/opt/gitkraken
+    cp -R gitkraken $PKG/opt/gitkraken
 
     find $PKG/opt/gitkraken/ -type f -exec chmod 644 {} \;
     chmod 755 $PKG/opt/gitkraken/gitkraken
