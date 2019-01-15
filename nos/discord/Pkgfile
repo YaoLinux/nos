@@ -6,7 +6,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Greg"
 
 name=discord
-version=0.0.6
+version=0.0.7
 
 run=(libcxx)
 
