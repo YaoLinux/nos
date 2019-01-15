@@ -7,17 +7,14 @@ url="https://dl.google.com/"
 packager="greg <greg@nutyx.org>"
 
 name=chrome
-version=70.0.3538.110
-release=1
+version=71.0.3578.98
 
-PKGMK_KEEP_SOURCES='NO'
+PKGMK_KEEP_SOURCES='no'
 
 source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
 build() {
 
-   cd $SRC
-   ar x google-chrome-stable_current_amd64.deb
    tar xf data.tar.xz
    mkdir $PKG/{etc,usr,opt}
    cp -av etc/ $PKG/
