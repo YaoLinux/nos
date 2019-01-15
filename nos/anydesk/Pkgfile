@@ -11,7 +11,6 @@ source=(https://download.anydesk.com/linux/anydesk_${version}-1_amd64.deb)
 
 build() {
 
-ar x anydesk_${version}-1_amd64.deb
 tar xvf data.tar.gz
 cp -r usr $PKG
 }
