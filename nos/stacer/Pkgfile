@@ -11,7 +11,6 @@ source=(https://github.com/oguzhaninan/Stacer/releases/download/v${version}/stac
 
 build() {
 
-ar x stacer_${version}_amd64.deb
 tar xvf data.tar.xz
 cp -r usr $PKG
 rm $PKG/usr/share/applications/stacer.desktop
