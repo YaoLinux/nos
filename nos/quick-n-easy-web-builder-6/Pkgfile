@@ -11,7 +11,6 @@ source=(https://www.quickandeasywebbuilder.com/quick-n-easy-web-builder-6_${vers
 
 build() {
 
-ar x quick-n-easy-web-builder-6_${version}_amd64.deb
 tar xvf data.tar.xz
 cp -r opt $PKG
 cp -r usr $PKG
