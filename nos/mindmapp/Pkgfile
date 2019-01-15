@@ -1,4 +1,4 @@
- # Depends on: 
+# Depends on: 
 
 description="Desktop application to draw mind maps"
 packager="liberodark"
@@ -11,7 +11,6 @@ source=(https://github.com/Mindmapp/mindmapp/releases/download/v${version}/Mindm
 
 build() {
 
-ar x Mindmapp-${version}.deb
 tar xvf data.tar.xz
 cp -r opt $PKG
 cp -r usr $PKG
