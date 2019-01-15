@@ -6,19 +6,18 @@ contributors="Rems"
 packager="tnut <tnut@nutyx.org>"
  
 name=opera
-version=57.0.3098.76
+version=57.0.3098.116
 
 run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
 PKGMK_KEEP_SOURCES="no"
 
 source=(http://ftp.opera.com/pub/opera/desktop/$version/linux/${name}-stable_${version}_amd64.deb
-        http://rems.techozor.fr/sources/libffmpeg.so
+        http://rems.techozor.fr/other-sources/libffmpeg.so
         default
         opera)
 
 build() {
-ar x ${name}-stable_${version}_amd64.deb
 tar -xvf data.tar.xz --exclude=usr/share/{lintian,menu} -C "$PKG/"
 cd "$PKG/usr/lib/"*-linux-gnu/
 mv "$name" ../
