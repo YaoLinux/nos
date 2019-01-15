@@ -5,13 +5,12 @@ packager="liberodark"
 url="https://riot.im/"
 
 name=riot-web
-version=0.17.6
+version=0.17.8
 
 source=(https://riot.im/packages/debian/pool/main/r/riot-web/riot-web_${version}_amd64.deb)
 
 build() {
 
-ar x riot-web_${version}_amd64.deb
 tar xvf data.tar.xz
 cp -r opt $PKG
 cp -r usr $PKG
