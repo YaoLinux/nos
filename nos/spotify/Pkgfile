@@ -9,7 +9,7 @@ name=spotify
 version=1.0.96.181
 _autreversion=.gf6bc1b6b
 _amd64_release=12
-release=2
+release=3
 
 source=(http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}${_autreversion}-${_amd64_release}_amd64.deb
 		spotify
@@ -18,9 +18,8 @@ source=(http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-cli
 
 
 build() {
-
 	
-	tar -xzf data.tar.gz
+	tar -xzf data.tar.gz -C $PKG
 
 	install -D ${PKG}/usr/share/spotify/spotify.desktop ${PKG}/usr/share/applications/spotify.desktop
 	install -D ${PKG}/usr/share/spotify/icons/spotify-linux-512.png ${PKG}/usr/share/pixmaps/spotify-client.png
