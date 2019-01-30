@@ -9,7 +9,7 @@ version=1.71.0.5
 
 run=(python)
 
-source=(https://netix.dl.sourceforge.net/project/cudatext/release/Linux/cudatext_${version}-1_gtk2_amd64.deb)
+source=(https://github.com/liberodark/CudaText/releases/download/$version/cudatext_$version-1_gtk2_amd64.deb)
 
 build() {
 tar xvf data.tar.xz
