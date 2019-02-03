@@ -6,6 +6,7 @@ packager="greg<greg@nutyx.org>"
 
 name=gitkraken
 version=4.2.0
+release=2
 
 source=(https://release.axocdn.com/linux/GitKraken-v$version.tar.gz
 		GitKraken.desktop
