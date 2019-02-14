@@ -1,4 +1,5 @@
 # Depends on: kernel-lts-nvidia-390
+
 description="NVIDIA drivers utilities and links"
 url="http://www.nvidia.com/"
 contributors="Remy"
@@ -8,6 +9,7 @@ run=(kernel-lts-nvidia-390)
 
 name=nvidia-lts-390
 version=390.87
+release=2
 
 [ "$PKGMK_ARCH" == "i686"   ] && _ARCH=x86
 [ "$PKGMK_ARCH" == "x86_64"   ] && _ARCH=x86_64
@@ -59,6 +61,11 @@ build() {
    ln -s libglx.so.$version $PKG/usr/lib/xorg/modules/extensions/libglx.so
    install -m 0755 libnvidia-wfb.so.$version $PKG/usr/lib/xorg/modules
 
+   # GTK libs for nvidia-settings
+
+   install -D -m755 "libnvidia-gtk2.so.$version" "$PKG/usr/lib/libnvidia-gtk2.so.$version"
+   install -D -m755 "libnvidia-gtk3.so.$version" "$PKG/usr/lib/libnvidia-gtk3.so.$version"
+   
    # xorg config
    mkdir -p $PKG/etc/X11/xorg.conf.d
    cat > $PKG/etc/X11/xorg.conf.d/30-nvidia.conf << "EOF"
