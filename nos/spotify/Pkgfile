@@ -1,4 +1,4 @@
-# Depends on: alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl10 curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls
+# Depends on: alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl10 curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls mesa
 
 description="A proprietary music streaming service"
 url="http://www.spotify.com"
@@ -6,15 +6,13 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Greg"
 
 name=spotify
-version=1.0.96.181
-_autreversion=.gf6bc1b6b
-_amd64_release=12
-release=3
+version=1.0.98.78
+_autreversion=.gb45d2a6b
+_amd64_release=10
 
 source=(http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}${_autreversion}-${_amd64_release}_amd64.deb
 		spotify
-		spotify.protocol
-		)
+		spotify.protocol)
 
 
 build() {
