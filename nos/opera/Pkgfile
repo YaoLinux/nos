@@ -2,11 +2,11 @@
 
 description="A fast and secure web browser"
 url="http://www.opera.com/"
-contributors="Rems"
-packager="tnut <tnut@nutyx.org>"
+maintainer="Rems"
+packager="Yaolinux Team"
  
 name=opera
-version=58.0.3135.47
+version=58.0.3135.90
 
 run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
