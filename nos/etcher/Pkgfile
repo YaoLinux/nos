@@ -6,7 +6,7 @@ contributors="liberodark"
 url="https://etcher.io/"
 
 name=etcher
-version=1.4.9
+version=1.5.5
 
 source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb)
 
