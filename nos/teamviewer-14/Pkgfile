@@ -7,8 +7,7 @@ url="https://www.teamviewer.com/"
 PKGMK_KEEP_SOURCES="no"
 
 name=teamviewer-14
-version=14.1.3399
-release=2
+version=14.1.18553
 
 run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
