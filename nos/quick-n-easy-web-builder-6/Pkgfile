@@ -5,7 +5,7 @@ packager="liberodark"
 url="http://www.quickandeasywebbuilder.com/"
 
 name=quick-n-easy-web-builder-6
-version=6.0.3
+version=6.1.1
 
 source=(https://www.quickandeasywebbuilder.com/quick-n-easy-web-builder-6_${version}_amd64.deb)
 
