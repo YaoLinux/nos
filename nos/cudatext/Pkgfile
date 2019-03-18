@@ -5,7 +5,7 @@ packager="liberodark"
 url="https://github.com/Alexey-T/CudaText"
 
 name=cudatext
-version=1.71.0.5
+version=1.76.2.0
 
 run=(python)
 
