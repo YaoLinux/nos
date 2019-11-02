@@ -1,8 +1,10 @@
-# Depends on: kernel-lts-nvidia-340
+makedepends=(kernel-lts-nvidia-340)
+
 description="NVIDIA drivers utilities and links"
 url="http://www.nvidia.com/"
-contributors="tnut"
-packager="remy <remyg@nutyx.org>"
+
+maintainer="rems"
+packager="Yaolinux Team"
 
 run=(kernel-lts-nvidia-340)
 
