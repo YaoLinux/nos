@@ -1,12 +1,12 @@
-# Depends on: sdl
+makedepends=(sdl)
 
 description="VirtualBox Guest Additions (binary version)"
 url="http://virtualbox.org"
 packager="tnut <tnut@nutyx.org>"
 
 name=virtualbox-guest
-version=6.0.4
-_release=128413
+version=6.0.14
+_release=133895
 
 PKGMK_GROUPS=(man)
 
