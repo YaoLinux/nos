@@ -1,10 +1,9 @@
-# Depends on: cairo, gdk-pixbuf, glib, gtk2, gtkglext, xorg-libx11, libxcb, xorg-libxdamage, xorg-libxext, xorg-libxfixes, xorg-libxi, xorg-libxrandr, xorg-libxtst, pango, shiboken2, pulseaudio
+makedepends=(cairo, gdk-pixbuf, glib, gtk2, xorg-libx11, libxcb, xorg-libxdamage, xorg-libxext, xorg-libxfixes, xorg-libxi, xorg-libxrandr, xorg-libxtst, pango, shiboken2, pulseaudio)
 
 description="All-In-One Software for Remote Support"
-packager="liberodark"
 url="https://anydesk.fr/"
 
-run=(gtkglext)
+packager="Yaolinux Team"
 
 name=anydesk
 version=4.0.1
