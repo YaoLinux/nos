@@ -1,12 +1,13 @@
-# Depends on: xdg-utils
+makedepends=(xdg-utils)
  
 description="Keeper is for protecting and managing your passwords."
-packager="rems@nutyx.org"
-contributors="liberodark"
 url="https://keepersecurity.com"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=keeper-password-manager
-version=14.1.2
+version=14.5.1
 
 source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_${version}_amd64.deb
         http://rems.techozor.fr/other-sources/keeper-password-manager.png
