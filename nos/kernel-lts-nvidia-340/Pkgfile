@@ -1,16 +1,16 @@
-# Depends on: kernel-lts
+makedepends=(kernel-lts)
+
 description="Additionnals modules for Nvidia proprietary drivers"
 url="http://www.nvidia.com/"
 
-maintainer=""
-packager="tnut <tnut@nutyx.org"
-contributors="Remy, Greg"
+maintainer="rems"
+packager="Yaolinux Team"
 
 name=kernel-lts-nvidia-340
 version=340.107
 release=6
 
-modfolder=/lib/modules/`uname -r`/kernel/drivers/video
+modfolder=/lib/modules/4.19*/kernel/drivers/video
 
 source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
         kernel-4.11.patch)
