@@ -1,4 +1,4 @@
-# Depends on: kernel-lts-nvidia-390
+makedepends=(kernel-lts-nvidia-390)
 
 description="NVIDIA drivers utilities and links"
 url="http://www.nvidia.com/"
