@@ -1,9 +1,10 @@
-# Depends on: gtk2 gconf libnotify xorg-libxscrnsaver glibc alsa-lib nspr nss pulseaudio libcxx
+makedepends=(gtk2 gconf libnotify xorg-libxscrnsaver glibc alsa-lib nspr nss pulseaudio libcxx)
 
 description="All-in-one voice and text chat for gamers that's free and secure."
 url="https://discordapp.com/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=discord
 version=0.0.9
@@ -11,9 +12,8 @@ version=0.0.9
 run=(libcxx)
 
 source=(https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz
-Discord.desktop
-LICENSE
-)
+        Discord.desktop
+        LICENSE)
 
 
 build() {
@@ -28,5 +28,4 @@ build() {
   install -d "${PKG}/usr/share/pixmaps"
   ln -s "/opt/${name}/discord.png" "${PKG}/usr/share/pixmaps/${name}.png"
   install -Dm644 "${SRC}/LICENSE" "${PKG}/usr/share/licenses/${name}/LICENSE"
-  
 }
