@@ -1,12 +1,13 @@
-# Depends on: gtk3 ffmpeg flac dbus freetype xorg-libxscrnsaver libxslt nss snappy re2 json-glib
+makedepends=(gtk3 ffmpeg flac dbus freetype xorg-libxscrnsaver libxslt nss snappy re2 json-glib)
 
 description="A web browser built for speed, simplicity, and security"
 url="https://www.chromium.org/Home"
-packager="tnut <tnut@nutyx.org>"
+
+packager="Yaolinux Team"
 maintainer="Arch Linux"
 
 name=chromium
-version=73.0.3683.75
+version=78.0.3904.87
 
 source=(libminizip.so.1.0.0 
 	https://pkg.adfinis-sygroup.ch/archlinux/extra/os/x86_64/chromium-$version-2-x86_64.pkg.tar.xz)
