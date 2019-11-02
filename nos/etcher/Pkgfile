@@ -1,12 +1,11 @@
-# Depends on: 
-
 description="Flash OS images to SD cards & USB drives, safely and easily."
-packager="rems@nutyx.org"
-contributors="liberodark"
 url="https://etcher.io/"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=etcher
-version=1.5.5
+version=1.5.60
 
 source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb)
 
