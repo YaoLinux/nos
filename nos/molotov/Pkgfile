@@ -1,12 +1,13 @@
-# Depends on: fuse2 gconf desktop-file-utils xdg-utils p7zip
+makedepends=(fuse gconf desktop-file-utils xdg-utils p7zip)
  
 description="Streaming access to French (only) TV channels."
-packager="rems"
 url="http://www.molotov.tv/"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=molotov
-version=3.1.0
-release=1
+version=4.1.0
 
 PKGMK_KEEP_SOURCES=no
 
