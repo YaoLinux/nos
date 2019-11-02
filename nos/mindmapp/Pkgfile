@@ -1,8 +1,7 @@
-# Depends on: 
-
 description="Desktop application to draw mind maps"
-packager="liberodark"
 url="https://mindmapp.org"
+
+packager="Yaolinux Team"
 
 name=mindmapp
 version=0.7.16
