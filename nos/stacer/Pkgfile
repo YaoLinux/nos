@@ -1,11 +1,13 @@
-# Depends on: qtcharts qtsvg hicolor-icon-theme
+makdepends=(qtcharts qtsvg hicolor-icon-theme)
 
 description="Linux System Optimizer and Monitoring"
-packager="liberodark"
 url="https://github.com/oguzhaninan/Stacer"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=stacer
-version=1.0.9
+version=1.1.0
 
 source=(https://github.com/oguzhaninan/Stacer/releases/download/v${version}/stacer_${version}_amd64.deb $name.desktop)
 
