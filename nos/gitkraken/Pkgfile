@@ -1,24 +1,19 @@
-# Depends on: gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 openssl10 rtmpdump libcurl-gnutls xorg-libxscrnsaver
+makedepends=(gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 openssl10 rtmpdump libcurl-gnutls xorg-libxscrnsaver)
 
-packager="sipo"
-contributors="sipo"
-maintainer="sipo"
+packager="Yaolinux Team"
+maintainer="rems"
 
 description="The intuitive, fast, and beautiful cross-platform Git client."
 url="https://www.gitkraken.com/"
 
 name=gitkraken
-version=4.2.2
+version=6.3.0
 
-source=(
-
-    https://release.axocdn.com/linux/GitKraken-v${version}.tar.gz
+source=(https://release.axocdn.com/linux/GitKraken-v${version}.tar.gz
     GitKraken.desktop
     gitkraken.png
     eula.html
-    gitkraken.sh
-
-)
+    gitkraken.sh)
 
 
 build(){
