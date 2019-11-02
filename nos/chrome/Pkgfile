@@ -1,7 +1,6 @@
-# Depends on: alsa-lib gtk3 cups xorg-libxscrnsaver xorg-libxtst nss 
+makedepends=(alsa-lib gtk3 cups xorg-libxscrnsaver xorg-libxtst nss)
 
-packager="sipo"
-contributors="Remy, Tnut"
+packager="Yaolinux Team"
 maintainer="sipo"
 
 description="The popular and trusted web browser by Google (Stable Channel)"
@@ -10,7 +9,7 @@ url="https://www.google.com/chrome"
 run=(xorg-libxscrnsaver)
 
 name=chrome
-version=73.0.3683.75
+version=78.0.3904.87
 
 source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
@@ -28,5 +27,4 @@ build(){
 
   rm -r "$PKG"/etc/cron.daily/ "$PKG"/opt/google/chrome/cron/
   rm "$PKG"/opt/google/chrome/product_logo_*.png
-  
 }
