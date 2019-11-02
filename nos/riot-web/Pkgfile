@@ -1,11 +1,12 @@
-# Depends on: gconf, libnotify, xorg-libxtst, nss, xorg-libxscrnsaver
+makedepends=(gconf libnotify xorg-libxtst nss xorg-libxscrnsaver)
 
 description="A feature-rich client for Matrix.org"
-packager="liberodark"
 url="https://riot.im/"
 
+packager="Yaolinux Team"
+
 name=riot-web
-version=0.17.8
+version=1.5.0
 
 source=(https://riot.im/packages/debian/pool/main/r/riot-web/riot-web_${version}_amd64.deb)
 
