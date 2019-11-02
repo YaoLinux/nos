@@ -1,12 +1,13 @@
-# Depends on: gtk3 alsa-lib libnotify curl nss cups xorg-libxscrnsaver desktop-file-utils shared-mime-info hicolor-icon-theme upower
+makedepends=(gtk3 alsa-lib libnotify curl nss cups xorg-libxscrnsaver desktop-file-utils shared-mime-info hicolor-icon-theme upower)
 
 description="A fast and secure web browser"
 url="http://www.opera.com/"
-maintainer="Rems"
+
+maintainer="rems"
 packager="Yaolinux Team"
  
 name=opera
-version=58.0.3135.107
+version=64.0.3417.54
 
 run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
