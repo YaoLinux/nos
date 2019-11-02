@@ -1,12 +1,11 @@
-# Depends on: 
- 
 description="Google Drive GUI"
-packager="liberodark"
 url="https://github.com/liberodark/ODrive"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=odrive
-version=0.2.0
-release=3
+version=0.3.0
 
 source=(https://github.com/liberodark/ODrive/releases/download/${version}/odrive_${version}_amd64.deb)
 
