@@ -1,13 +1,14 @@
-# Depends on: hicolor-icon-theme dbus qtbase qtdeclarative qtquickcontrols qtwebkit qtx11extras
+makedepends=(hicolor-icon-theme dbus qtbase qtdeclarative qtquickcontrols qtwebkit qtx11extras)
 
 description="All-In-One Software for Remote Support and Online Meetings"
-packager="liberodark"
 url="https://www.teamviewer.com/"
+
+packager="Yaolinux Team"
 
 PKGMK_KEEP_SOURCES="no"
 
 name=teamviewer-14
-version=14.1.18553
+version=14.6.2452
 
 run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
