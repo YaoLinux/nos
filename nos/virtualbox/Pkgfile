@@ -1,14 +1,15 @@
-# Depends on: sdl
+makedepends=(sdl)
 
 description="VirtualBox is a powerfull 32 and 64 bits virtualization product (binary version)"
 url="http://virtualbox.org"
-packager="tnut <tnut@nutyx.org>"
-contributors="tnut, greg"
+
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=virtualbox
-version=6.0.4
+version=6.0.14
 _name=Oracle_VM_VirtualBox_Extension_Pack
-_release=128413
+_release=133895
 
 
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
