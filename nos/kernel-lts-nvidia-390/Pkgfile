@@ -1,4 +1,4 @@
-# Depends on: kernel-lts
+makedepends=(kernel-lts)
 description="Additionnals modules for Nvidia proprietary drivers"
 url="http://www.nvidia.com/"
 
