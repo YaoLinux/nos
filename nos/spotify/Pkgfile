@@ -1,14 +1,15 @@
-# Depends on: alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl10 curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls mesa
+makedepends=(alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl10 curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls mesa)
 
 description="A proprietary music streaming service"
 url="http://www.spotify.com"
-packager="tnut <tnut@nutyx.org>"
-contributors="Greg"
+
+packager="Yaolinux Team"
+maintainer="Graknu"
 
 name=spotify
-version=1.0.98.78
-_autreversion=.gb45d2a6b
-_amd64_release=10
+version=1.1.10.546
+_autreversion=.ge08ef575
+_amd64_release=19
 
 source=(http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}${_autreversion}-${_amd64_release}_amd64.deb
 		spotify
