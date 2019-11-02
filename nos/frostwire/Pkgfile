@@ -1,12 +1,14 @@
-# Depends on: openjdk
+makedepends=(openjdk)
 
 description="Cross-platform file backup"
-packager="liberodark"
 url="http://www.frostwire.com"
 
+packager="Yaolinux Team"
+maintainer="rems"
+
 name=frostwire
-version=6.7.6
-_version=272
+version=6.8.3
+_version=289
 
 run=(openjdk)
 
