@@ -1,9 +1,10 @@
 makedepends=(kernel-lts)
+
 description="Additionnals modules for Nvidia proprietary drivers"
 url="http://www.nvidia.com/"
 
-contributors="Remy"
-packager="tnut <tnut@nutyx.org>"
+maintainer="rems"
+packager="Yaolinux Team"
 
 name=kernel-lts-nvidia-390
 version=390.129
@@ -22,7 +23,7 @@ patch -Np1 -i ../kernel-4.19.patch
 build()
 {
 cd NVIDIA-Linux-x86_64-$version/kernel
-make modules
+make SYSSRC="/lib/modules/$(basename 4.19*)/build" modules
 }
 
 package()
