@@ -9,7 +9,7 @@ maintainer="rems"
 name=keeper-password-manager
 version=14.5.1
 
-source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_${version}_amd64.deb
+source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_"${version}"_amd64.deb
         http://rems.techozor.fr/other-sources/keeper-password-manager.png
         keeper-password-manager.desktop)
 
