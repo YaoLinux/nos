@@ -7,10 +7,10 @@ packager="Yaolinux Team"
 maintainer="Arch Linux"
 
 name=chromium
-version=78.0.3904.87
+version=78.0.3904.97
 
 source=(libminizip.so.1.0.0 
-	https://pkg.adfinis-sygroup.ch/archlinux/extra/os/x86_64/chromium-$version-2-x86_64.pkg.tar.xz)
+	https://pkg.adfinis-sygroup.ch/archlinux/extra/os/x86_64/chromium-$version-1-x86_64.pkg.tar.xz)
 
 build() {
 
