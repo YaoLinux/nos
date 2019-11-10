@@ -1,4 +1,4 @@
-makedepends=(openjdk)
+makedepends=(openjdk xdg-utils)
 
 description="Cross-platform file backup"
 url="http://www.frostwire.com"
@@ -12,12 +12,14 @@ _version=289
 
 run=(openjdk)
 
-source=(https://dl.frostwire.com/frostwire/$version/frostwire-$version.noarch.tar.gz $name.desktop $name.png)
+source=(https://github.com/frostwire/frostwire/releases/download/frostwire-desktop-${version}-build-${_version}/frostwire-${version}.amd64.tar.gz
+        $name.desktop
+        $name.png)
 
 build() {
 
 mkdir -p $PKG/opt/frostwire/
-cp -r "frostwire-${version}.noarch/."  $PKG/opt/frostwire/
+cp -r "frostwire-${version}.amd64/."  $PKG/opt/frostwire/
 install -vDm644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
 install -vDm644 $SRC/$name.png $PKG/usr/share/pixmaps/$name.png
 }
