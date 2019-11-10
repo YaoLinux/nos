@@ -1,4 +1,4 @@
-makedepends=(fuse gconf desktop-file-utils xdg-utils p7zip)
+makedepends=(fuse2 gconf desktop-file-utils xdg-utils p7zip)
  
 description="Streaming access to French (only) TV channels."
 url="http://www.molotov.tv/"
