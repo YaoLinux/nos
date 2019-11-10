@@ -1,4 +1,4 @@
-makedepends=(alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl10 curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls mesa)
+makedepends=(alsa-lib gconf gtk2 glib nss xorg-libxtst xorg-libx11 xorg-libxscrnsaver openssl curl desktop-file-utils rtmpdump ffmpeg zenity systemd libcurl-gnutls mesa)
 
 description="A proprietary music streaming service"
 url="http://www.spotify.com"
