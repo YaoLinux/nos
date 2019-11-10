@@ -11,13 +11,10 @@ version=390.129
 
 modfolder=/lib/modules/4.19*/kernel/drivers/video
 
-source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
-        kernel-4.19.patch)
+source=(http://fr.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
 prepare() {
 sh NVIDIA-Linux-x86_64-$version.run --extract-only
-cd NVIDIA-Linux-x86_64-$version
-patch -Np1 -i ../kernel-4.19.patch
 }
 
 build()
