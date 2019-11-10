@@ -6,15 +6,16 @@ url="https://anydesk.fr/"
 packager="Yaolinux Team"
 
 name=anydesk
-version=4.0.1
-release=2
+version=5.4.1
 
 source=(https://download.anydesk.com/linux/anydesk_${version}-1_amd64.deb)
 
 build() {
 
 tar xvf data.tar.gz
+
 cp -r usr $PKG
+
 install -D -m 644 $PKG/usr/share/anydesk/files/systemd/anydesk.service $PKG/lib/systemd/system/anydesk.service
 sed -i "s/PIDFile=\/tm\/ad.pid/PIDFile=\/run\/anydesk.pid/" $PKG/lib/systemd/system/anydesk.service
 }
