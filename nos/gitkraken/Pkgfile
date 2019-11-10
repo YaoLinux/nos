@@ -1,4 +1,4 @@
-makedepends=(gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 openssl10 rtmpdump libcurl-gnutls xorg-libxscrnsaver)
+makedepends=(gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 rtmpdump libcurl-gnutls xorg-libxscrnsaver)
 
 packager="Yaolinux Team"
 maintainer="rems"
