@@ -7,9 +7,9 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=code
-version=1.39.2
+version=1.40.0
 
-source=(https://download.tuxfamily.org/nutyx/files/code_${version}-1546901646_amd64.deb)
+source=(https://az764295.vo.msecnd.net/stable/86405ea23e3937316009fc27c9361deee66ffbf5/code_"$version"-1573064499_amd64.deb)
 
 build() {
 
