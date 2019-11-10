@@ -25,22 +25,20 @@ cd NVIDIA-Linux-x86_64-$version
 patch -Np0 < "$SRC/kernel-4.11.patch"
 export IGNORE_CC_MISMATCH=1
 cd kernel
-make module
+make SYSSRC="/lib/modules/$(basename 4.19*)/build" module
 
 cd uvm
-make module
-
+make SYSSRC="/lib/modules/$(basename 4.19*)/build" module
 }
 
 package()
 {
-install -D -m644 "$SRC/NVIDIA-Linux-x86_64-$version/kernel/nvidia.ko" \
+install -D -m644 "NVIDIA-Linux-x86_64-$version/kernel/nvidia.ko" \
       "$PKG$modfolder/nvidia.ko"
-install -D -m644 "$SRC/NVIDIA-Linux-x86_64-$version/kernel/uvm/nvidia-uvm.ko" \
+install -D -m644 "NVIDIA-Linux-x86_64-$version/kernel/uvm/nvidia-uvm.ko" \
       "$PKG$modfolder/nvidia-uvm.ko"
 gzip $PKG$modfolder/*.ko
 
 echo "depmod -a `basename /lib/modules/*`" > \
 $PKGMK_ROOT/$name.post-install
-
 }
