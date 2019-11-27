@@ -7,8 +7,8 @@ packager="Yaolinux Team"
 
 PKGMK_KEEP_SOURCES="no"
 
-name=teamviewer-14
-version=14.6.2452
+name=teamviewer-15
+version=15.0.8397
 
 run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
