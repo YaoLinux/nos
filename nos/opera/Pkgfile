@@ -7,7 +7,7 @@ maintainer="rems"
 packager="Yaolinux Team"
  
 name=opera
-version=64.0.3417.54
+version=65.0.3467.48
 
 run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
