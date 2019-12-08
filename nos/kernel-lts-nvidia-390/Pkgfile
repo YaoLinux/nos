@@ -8,6 +8,7 @@ packager="Yaolinux Team"
 
 name=kernel-lts-nvidia-390
 version=390.129
+release=2
 
 modfolder=/lib/modules/4.19*/kernel/drivers/video
 
