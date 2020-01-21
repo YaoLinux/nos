@@ -7,7 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=molotov
-version=4.1.0
+version=4.2.1
 
 PKGMK_KEEP_SOURCES=no
 
@@ -29,8 +29,8 @@ install -d -m755 $PKG/opt/appimages
 
 hicolor="squashfs-root/usr/share/icons/hicolor"
     for size in $(ls -1 ${hicolor}); do
-    	install -d -m755 ${PKG}/usr/share/icons/hicolor/${size}/apps
-    	install -D -m644 ${hicolor}/${size}/apps/molotov.png ${PKG}/usr/share/icons/hicolor/${size}/apps/molotov.png
+	install -d -m755 ${PKG}/usr/share/icons/hicolor/${size}/apps
+	install -D -m644 ${hicolor}/${size}/apps/molotov.png ${PKG}/usr/share/icons/hicolor/${size}/apps/molotov.png
     done
 
 install -D -m644 squashfs-root/molotov.desktop ${PKG}/usr/share/applications/appimagekit-molotov.desktop
