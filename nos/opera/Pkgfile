@@ -7,14 +7,14 @@ maintainer="rems"
 packager="Yaolinux Team"
  
 name=opera
-version=65.0.3467.69
+version=66.0.3515.72
 
 run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
 PKGMK_KEEP_SOURCES="no"
 
 source=(http://ftp.opera.com/pub/opera/desktop/$version/linux/${name}-stable_${version}_amd64.deb
-        http://rems.techozor.fr/other-sources/libffmpeg.so
+        http://rems.6admin.net/other-sources/libffmpeg.so
         default
         opera)
 
