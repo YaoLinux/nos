@@ -9,7 +9,7 @@ url="https://www.google.com/chrome"
 run=(xorg-libxscrnsaver)
 
 name=chrome
-version=79.0.3945.79
+version=80.0.3987.87
 
 source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
