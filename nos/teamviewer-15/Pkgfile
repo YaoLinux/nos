@@ -8,11 +8,11 @@ packager="Yaolinux Team"
 PKGMK_KEEP_SOURCES="no"
 
 name=teamviewer-15
-version=15.0.8397
+version=15.1.3997
 
 run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
-source=(https://download.teamviewer.com/download/linux/version_14x/teamviewer_amd64.deb)
+source=(https://download.teamviewer.com/download/linux/version_15x/teamviewer_amd64.deb)
 
 build() {
 
