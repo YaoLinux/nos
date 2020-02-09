@@ -5,13 +5,14 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=etcher
-version=1.5.69
+version=1.5.76
 
 source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb)
 
 build() {
 
-tar xvf data.tar.xz
+tar xaf data.tar.bz2
+
 cp -r opt $PKG
 cp -r usr $PKG
 }
