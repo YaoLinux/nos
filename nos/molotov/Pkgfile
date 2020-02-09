@@ -7,7 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=molotov
-version=4.2.1
+version=4.2.2
 
 PKGMK_KEEP_SOURCES=no
 
