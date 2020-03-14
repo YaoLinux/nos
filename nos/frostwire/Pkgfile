@@ -7,8 +7,8 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=frostwire
-version=6.8.3
-_version=289
+version=6.8.4
+_version=292
 
 run=(openjdk)
 
