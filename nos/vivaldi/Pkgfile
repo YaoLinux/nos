@@ -8,9 +8,8 @@ maintainer="rems"
 
 name=vivaldi
 _name=vivaldi-ffmpeg-codecs
-version=2.10
-release=2
-_version=1745.27-1
+version=2.11
+_version=1811.47-1
 
 run=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
