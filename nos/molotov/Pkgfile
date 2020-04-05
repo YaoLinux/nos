@@ -1,4 +1,6 @@
 makedepends=(fuse2 gconf desktop-file-utils xdg-utils p7zip)
+
+run=(fuse2 gconf desktop-file-utils xdg-utils)
  
 description="Streaming access to French (only) TV channels."
 url="http://www.molotov.tv/"
@@ -8,6 +10,7 @@ maintainer="rems"
 
 name=molotov
 version=4.2.2
+release=2
 
 PKGMK_KEEP_SOURCES=no
 
