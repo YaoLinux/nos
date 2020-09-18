@@ -9,7 +9,7 @@ maintainer="rems"
 PKGMK_KEEP_SOURCES="no"
 
 name=teamviewer-15
-version=15.3.2682
+version=15.9.4
 
 run=(qtwebkit qtdeclarative qtquickcontrols qtx11extras hicolor-icon-theme)
 
