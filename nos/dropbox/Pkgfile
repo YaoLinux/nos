@@ -7,7 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=dropbox
-version=83.4.152
+version=105.4.651
 
 source=(https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-$version.tar.gz
 		dropbox.png
