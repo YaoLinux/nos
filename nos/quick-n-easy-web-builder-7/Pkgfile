@@ -7,7 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=quick-n-easy-web-builder-7
-version=7.1.1
+version=7.3.2
 
 source=(https://www.quickandeasywebbuilder.com/quick-n-easy-web-builder-7_${version}_amd64.deb)
 
