@@ -7,10 +7,10 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=keeper-password-manager
-version=14.14.2
+version=15.0.11
 
 source=(https://keepersecurity.com/desktop_electron/Linux/repo/deb/keeperpasswordmanager_"${version}"_amd64.deb
-        http://rems.6admin.net/other-sources/keeper-password-manager.png
+        http://download.yaolinux.org/yaolinux/files/keeper-password-manager.png
         keeper-password-manager.desktop)
 
 build() {
