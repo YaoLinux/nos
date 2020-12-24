@@ -1,4 +1,4 @@
-makedepends=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
+makedepends=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
 description="An advanced browser made with the power user in mind."
 url="https://vivaldi.com"
@@ -8,10 +8,10 @@ maintainer="rems"
 
 name=vivaldi
 _name=vivaldi-ffmpeg-codecs
-version=3.3
-_version=2022.45-1
+version=3.5
+_version=2115.81-1
 
-run=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
+run=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
 source=(https://downloads.vivaldi.com/stable/$name-stable-$version.${_version}.x86_64.rpm
         libffmpeg.so)
