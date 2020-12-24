@@ -1,4 +1,4 @@
-makedepends=(gtk2 gconf libnotify xorg-libxscrnsaver glibc alsa-lib nspr nss pulseaudio libcxx)
+makedepends=(gtk2 libnotify xorg-libxscrnsaver glibc alsa-lib nspr nss pulseaudio)
 
 description="All-in-one voice and text chat for gamers that's free and secure."
 url="https://discordapp.com/"
@@ -7,9 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=discord
-version=0.0.12
-
-run=(libcxx)
+version=0.0.13
 
 source=(https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz
         Discord.desktop
