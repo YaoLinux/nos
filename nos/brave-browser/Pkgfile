@@ -1,4 +1,4 @@
-makedepends=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
+makedepends=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
 description="Web browser that blocks ads and trackers by default."
 url="https://brave.com"
@@ -9,7 +9,7 @@ maintainer="minzord"
 name=brave-browser
 version=1.4.96
 
-run=(gtk3 nss xorg-libxtst gconf xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
+run=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
 
 source=(https://github.com/brave/$name/releases/download/v$version/$name-$version-$release.x86_64.rpm
         libffmpeg.so)
