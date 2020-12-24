@@ -1,4 +1,4 @@
-makedepends=(gconf libnotify xorg-libxtst nss xorg-libxscrnsaver)
+makedepends=(libnotify xorg-libxtst nss xorg-libxscrnsaver)
 
 description="A feature-rich client for Matrix.org"
 url="https://riot.im/"
