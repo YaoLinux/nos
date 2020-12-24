@@ -7,9 +7,9 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=code
-version=1.49.1
+version=1.52.1
 
-source=(https://az764295.vo.msecnd.net/stable/58bb7b2331731bf72587010e943852e13e6fd3cf/code_${version}-1600299189_amd64.deb)
+source=(https://az764295.vo.msecnd.net/stable/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/code_${version}-1608136922_amd64.deb)
 
 build() {
 
