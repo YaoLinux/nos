@@ -7,19 +7,14 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=frostwire
-version=6.8.7
-_version=296
+version=6.8.9
 
 run=(openjdk)
 
-source=(https://github.com/frostwire/frostwire/releases/download/frostwire-desktop-${version}-build-${_version}/frostwire-${version}.amd64.tar.gz
-        $name.desktop
-        $name.png)
+source=(https://prime.frostwire.com/frostwire/$version/$name-$version.amd64.deb)
 
 build() {
 
-mkdir -p $PKG/opt/frostwire/
-cp -r "frostwire-${version}.amd64/."  $PKG/opt/frostwire/
-install -vDm644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
-install -vDm644 $SRC/$name.png $PKG/usr/share/pixmaps/$name.png
+tar xvf data.tar.xz -C $PKG
 }
+
