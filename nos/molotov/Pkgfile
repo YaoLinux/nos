@@ -1,6 +1,6 @@
-makedepends=(fuse2 gconf desktop-file-utils xdg-utils p7zip)
+makedepends=(fuse2 desktop-file-utils xdg-utils p7zip)
 
-run=(fuse2 gconf desktop-file-utils xdg-utils)
+run=(fuse2 desktop-file-utils xdg-utils)
  
 description="Streaming access to French (only) TV channels."
 url="http://www.molotov.tv/"
@@ -9,7 +9,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=molotov
-version=4.2.2
+version=4.4.0
 release=2
 
 PKGMK_KEEP_SOURCES=no
@@ -23,8 +23,8 @@ chmod u+x molotov.AppImage
 
 ./molotov.AppImage --appimage-extract 2> /dev/null
 
-sed -i "s/Exec=AppRun/Exec=$name/" squashfs-root/molotov.desktop
-sed -i "s/Categories=AudioVideo/Categories=Video;Player;AudioVideo;/" squashfs-root/molotov.desktop
+sed -i "s/Exec=AppRun/Exec=$name/" squashfs-root/@molotovdesktop-wrapper.desktop
+sed -i "s/Categories=AudioVideo/Categories=Video;Player;AudioVideo;/" squashfs-root/@molotovdesktop-wrapper.desktop
 sed -i "s/MOLOTOV_VERSION/${version}/g" molotov
 
 install -d -m755 $PKG/usr/share/{applications,icons/hicolor}
@@ -33,10 +33,10 @@ install -d -m755 $PKG/opt/appimages
 hicolor="squashfs-root/usr/share/icons/hicolor"
     for size in $(ls -1 ${hicolor}); do
 	install -d -m755 ${PKG}/usr/share/icons/hicolor/${size}/apps
-	install -D -m644 ${hicolor}/${size}/apps/molotov.png ${PKG}/usr/share/icons/hicolor/${size}/apps/molotov.png
+	install -D -m644 ${hicolor}/${size}/apps/@molotovdesktop-wrapper.png ${PKG}/usr/share/icons/hicolor/${size}/apps/molotov.png
     done
 
-install -D -m644 squashfs-root/molotov.desktop ${PKG}/usr/share/applications/appimagekit-molotov.desktop
+install -D -m644 squashfs-root/@molotovdesktop-wrapper.desktop ${PKG}/usr/share/applications/appimagekit-molotov.desktop
 install -D -m755 molotov $PKG/usr/bin/molotov
 install -D -m755 molotov.AppImage $PKG/opt/appimages/Molotov-$version.AppImage
 rm -r squashfs-root
