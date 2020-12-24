@@ -1,0 +1,19 @@
+makedepends=(xdg-utils)
+
+description="An Web builder"
+url="http://www.quickandeasywebbuilder.com/"
+
+packager="Yaolinux Team"
+maintainer="rems"
+
+name=quick-n-easy-web-builder-8
+version=8.0.2
+
+source=(https://www.quickandeasywebbuilder.com/quick-n-easy-web-builder-8_${version}_amd64.deb)
+
+build() {
+
+tar xvf data.tar.xz
+cp -r opt $PKG
+cp -r usr $PKG
+}
