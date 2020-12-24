@@ -1,4 +1,4 @@
-makedepends=(gtk2 nss xorg-libxtst libgnome-keyring gconf alsa-lib xorg-libx11 rtmpdump libcurl-gnutls xorg-libxscrnsaver)
+makedepends=(gtk2 nss xorg-libxtst libgnome-keyring alsa-lib xorg-libx11 rtmpdump libcurl-gnutls xorg-libxscrnsaver)
 
 packager="Yaolinux Team"
 maintainer="rems"
@@ -7,7 +7,7 @@ description="The intuitive, fast, and beautiful cross-platform Git client."
 url="https://www.gitkraken.com/"
 
 name=gitkraken
-version=7.3.2
+version=7.4.1
 
 source=(https://release.axocdn.com/linux/GitKraken-v${version}.tar.gz
     GitKraken.desktop
