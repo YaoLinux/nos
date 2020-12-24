@@ -4,15 +4,21 @@ url="https://etcher.io/"
 packager="Yaolinux Team"
 maintainer="rems"
 
-name=etcher
-version=1.5.79
+makedepends=(lbzip2)
 
-source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb)
+name=etcher
+version=1.5.113
+
+source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher-electron_${version}_amd64.deb
+	etcher)
 
 build() {
+  mkdir -p output
+  tar -xvf data.tar.bz2 -C output
+}
 
-tar xaf data.tar.bz2
-
-cp -r opt $PKG
-cp -r usr $PKG
+package() {
+  cp -r output/* $PKG
+  install -d $PKG/usr/bin
+  install -Dm755 etcher $PKG/usr/bin/etcher
 }
